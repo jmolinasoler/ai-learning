@@ -121,6 +121,4 @@ Cada vez que uses el Skill:
 
 Con el tiempo tendrás una biblioteca de Skills que puedes copiar-pegar en Claude, ChatGPT, Grok o cualquier modelo nuevo que salga.
 
-¿Quieres que te cree el primer Skill de ejemplo con este template (por ejemplo, un “Analizador de PDFs” o “Planificador de Proyectos”)? Dime qué tarea quieres automatizar y te lo monto listo para usar.
-
-Este sistema es exactamente lo que los ingenieros de Anthropic están usando internamente y recomendando. ¡Es oro puro! 🚀
+> Este sistema es exactamente lo que los ingenieros de Anthropic están usando internamente y recomendando.
