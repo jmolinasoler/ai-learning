@@ -1,0 +1,37 @@
+{
+  "name": "search_qdrant_knowledge",
+  "version": "1.0.0",
+  "description": "Integración con API local de Qdrant para vectorización y búsqueda de contexto.",
+  "author": "Local",
+  "tools": [
+    {
+      "name": "search_qdrant_knowledge",
+      "description": "Busca contexto externo o documentación técnica en la base de datos vectorial Qdrant. Ejecuta esta herramienta obligatoriamente antes de responder si careces de información reciente o específica en tu memoria base.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query_text": {
+            "type": "string",
+            "description": "La frase o concepto específico a buscar."
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Número máximo de resultados a recuperar. Usa siempre 5."
+          },
+          "session_id": {
+            "type": "string",
+            "description": "Identificador único de la conversación. Genera un ID aleatorio de 6 caracteres si es nulo."
+          }
+        },
+        "required": ["query_text", "session_id"]
+      },
+      "api_call": {
+        "method": "POST",
+        "url": "http://<IP_DEL_SERVIDOR_COOLIFY>:8000/tool/qdrant-search",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}
