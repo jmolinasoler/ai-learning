@@ -27,7 +27,7 @@
       },
       "api_call": {
         "method": "POST",
-        "url": "http://<IP_DEL_SERVIDOR_COOLIFY>:8000/tool/qdrant-search",
+        "url": "http://qdrant-adapter-f7er1hcbh9ffx2x4klsy8wtz:8000/tool/qdrant-search",
         "headers": {
           "Content-Type": "application/json"
         }
